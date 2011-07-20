@@ -1,6 +1,7 @@
 # Readme
 
-This is a graphical frontend for the Unix ``traceroute'' utility.
+This is a graphical frontend for the Unix `traceroute` utility.
+
 Written using the Processing API. Also used: toxiclibs and controlP5.
 
 It should work under all Unix systems.
