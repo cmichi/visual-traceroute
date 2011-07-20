@@ -7,7 +7,8 @@ It should work under all Unix systems.
 
 Requirements are:
 
- * ``traceroute'', ``dig''
+ * `traceroute`
+ * `dig`
  * Java
 
 
