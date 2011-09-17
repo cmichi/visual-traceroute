@@ -25,6 +25,15 @@ Uploaded a short video to [http://vimeo.com/26674070](Vimeo).
 Some bugs left and I want to resolve the `dig` dependency.
 
 
+# How to start the application?
+
+You can either import everything as an Eclipse project, adjust the Build path and do `Run As > Java Applet` or you can use the standalone version:
+
+	tar -xf standalone.tar.gz 
+	cd standalone/
+	java -Djava.library.path=./library -jar trace.jar
+
+
 # Maps
 
 The textures are taken from the [http://visibleearth.nasa.gov/view_set.php?categoryId=2363&p=1](NASA's Blue Marble project). 

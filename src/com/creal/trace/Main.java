@@ -44,7 +44,6 @@ public class Main extends PApplet {
 	public int FONT_COLOR = color(255, 237, 178);
 	public int FONT_COLOR2 = color(255, 255, 228);
 	public int BG_COLOR = color(45, 43, 44);
-	private PImage bg;
 
 	/** The color of the connections between trace points alternates */
 	public int currShiny = 0;
@@ -111,7 +110,6 @@ public class Main extends PApplet {
 		
 		tracer = new Trace(this);
 		earth = new Earth(this, "world32k.jpg");
-		bg = loadImage("bg.jpg");
 		ctrl.draw();
 	}
 
