@@ -23,6 +23,7 @@ Uploaded a short video to [http://vimeo.com/26674070](Vimeo).
 # Project Status?
 
 Some bugs left and I want to resolve the `dig` dependency.
+Known issue: Loading bar vanishes after first station.
 
 
 # How to start the application?

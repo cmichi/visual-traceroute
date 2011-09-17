@@ -62,10 +62,11 @@ public class Control {
 			i++;
 		}
 
+		// if (p.tracer.started && !p.tracer.finished) {
 		if (i == 0 && p.tracer.started) {
 			p.fill(p.WHITE);
 			p.text("loading " + p.tracer.hostname + getLoadingDots(), x
-					- p.shiftEarthX, y + 10);
+					- p.shiftEarthX, yOriginal + 10);
 		}
 	}
 
