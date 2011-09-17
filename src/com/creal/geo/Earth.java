@@ -62,7 +62,6 @@ public class Earth {
 
 	private GLModel earth;
 	private GLTexture texEarth;
-	private GLTexture texMask;
 	private GLTexture texNormal;
 	private GLTexture texHeight;
 	private GLTexture texSpecular;
@@ -85,12 +84,11 @@ public class Earth {
 	    /* set coordinates */
 	    earth.updateVertices(vertices);
 	    
-	    texEarth = new GLTexture(this.p, "earthDiffuse.png");
-	    texMask = new GLTexture(this.p, "earthMask.png");
+	    texEarth = new GLTexture(this.p, "earth.png");
 	    texNormal = new GLTexture(this.p, "earthNormal.png");
 	    
-	    texHeight = new GLTexture(this.p, "heightmap.png");
-	    texSpecular = new GLTexture(this.p, "earthSpec.png");
+	    texHeight = new GLTexture(this.p, "earthHeightmap.png");
+	    texSpecular = new GLTexture(this.p, "earthSpecular.png");
 	    earth.initTextures(4);
 	    earth.setTexture(0, texEarth);
 	    earth.setTexture(1, texNormal);
