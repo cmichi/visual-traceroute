@@ -48,6 +48,7 @@ public class Trace extends Thread {
 					p.getInputStream()));
 			while ((line = input.readLine()) != null) {
 				TraceResult tr = this.parse(line.trim());
+				// System.out.println(line + ", " + tr);
 
 				if (tr != null) {
 					this.p.traces.add(tr);
@@ -133,7 +134,7 @@ public class Trace extends Thread {
 	}
 
 
-	private Object addNewConnection(Coordinate co1, Coordinate co2) {
+	private void addNewConnection(Coordinate co1, Coordinate co2) {
 		Connection con = new Connection(p, co1, co2);
 		con.currShiny = p.currShiny;
 
@@ -143,9 +144,8 @@ public class Trace extends Thread {
 		con.conn2.conn2 = new Connection(p, co1, co2);
 		con.conn2.conn2.currShiny = con.currShiny;
 		p.currShiny = ++p.currShiny % p.SHINY.length;
-
+		
 		p.connections.add(con);
-		return null;
 	}
 
 
@@ -190,7 +190,7 @@ public class Trace extends Thread {
 			String co = loc.latitude + " " + loc.longitude;
 			return new Coordinate(this.p, co);
 		} catch (Exception e) {
-			// ...
+			System.out.println(e);
 		}
 
 		return null;

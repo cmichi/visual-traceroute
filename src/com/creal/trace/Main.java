@@ -1,10 +1,14 @@
 package com.creal.trace;
 
 import java.io.IOException;
+import java.util.List;
 import java.util.Properties;
 import java.util.Vector;
 
 import javax.media.opengl.GL;
+
+import codeanticode.glgraphics.GLConstants;
+import codeanticode.glgraphics.GLGraphics;
 
 import com.creal.geo.Connection;
 import com.creal.geo.Earth;
@@ -12,10 +16,15 @@ import com.creal.geo.Earth;
 import processing.core.PApplet;
 import processing.core.PImage;
 import processing.opengl.PGraphicsOpenGL;
+import toxi.geom.Spline3D;
+import toxi.geom.Vec3D;
 import toxi.processing.ToxiclibsSupport;
 import controlP5.ControlEvent;
 import controlP5.ControlFont;
 import controlP5.ControlP5;
+import controlP5.ControlWindow;
+import controlP5.Controller;
+import controlP5.Textfield;
 
 /**
  * Main class. 
@@ -72,7 +81,8 @@ public class Main extends PApplet {
 	/** File containing all paths */
 	public Properties configFile = new Properties();
 
-
+	public GLGraphics renderer;
+	
 	/**
 	 * Use to start as a regular Java-Application. Just choose
 	 * "Run As >> Java Application" and not "Java Applet".
@@ -90,13 +100,15 @@ public class Main extends PApplet {
 			e.printStackTrace();
 		}
 
-		size(1024, 768, OPENGL);
+	    size(1024, 772, GLConstants.GLGRAPHICS);
 		gl = ((PGraphicsOpenGL) g).gl;
 		pgl = (PGraphicsOpenGL) g;
-
 		gfx = new ToxiclibsSupport(this);
+		
+		renderer = (GLGraphics) (g);
 		initCtrls();
 
+		
 		tracer = new Trace(this);
 		earth = new Earth(this, "world32k.jpg");
 		bg = loadImage("bg.jpg");
@@ -107,23 +119,27 @@ public class Main extends PApplet {
 	public void draw() {
 		background(0);
 
-		directionalLight(255, 255, 255,
-
-		width / 2 + shiftEarthX, height / 2, -400);
-
-		pushMatrix();
-		translate(-235, -180, -300);
-		image(bg, 0, 0, 1900, 1200);
-		popMatrix();
+		gl.glDisable(GL.GL_COLOR);
+        gl.glActiveTexture(GL.GL_TEXTURE0);
+		
+		rectMode(CORNER);
+        renderer.rectMode(CORNER);
+		controlP5.draw();
 
 		pushMatrix();
 		translate(shiftEarthX, 0, 0);
-
+		
 		ctrl.draw();
-		earth.renderGlobe();
 		Connection.drawAllConnections(this);
+		
 		popMatrix();
+		
+		pushMatrix();
+		translate(shiftEarthX, 0, 0);
 
+		earth.renderGlobe();
+		popMatrix();
+		
 		/* simple routine for moving the earth with mouse pans */
 		if (mousePressed) {
 			velocityX += (mouseY - pmouseY) * 0.01f;
@@ -137,6 +153,7 @@ public class Main extends PApplet {
 	 */
 	public void initCtrls() {
 		controlP5 = new ControlP5(this);
+		controlP5.setAutoDraw(false);
 		ctrl = new Control(this);
 	}
 
