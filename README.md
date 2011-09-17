@@ -2,7 +2,7 @@
 
 This is a graphical frontend for the Unix `traceroute` utility.
 
-Written using the Processing API. Also used: toxiclibs and controlP5.
+Written using the Processing API. Also used: GLGarphics, toxiclibs and controlP5.
 
 It should work under all Unix systems.
 
@@ -22,8 +22,12 @@ Uploaded a short video to [http://vimeo.com/26674070](Vimeo).
 
 # Project Status?
 
-Work in progress!
-Still some bugs and I want to beautify it.
+Some bugs left and I want to resolve the `dig` dependency.
+
+
+# Maps
+
+The textures are taken from the [http://visibleearth.nasa.gov/view_set.php?categoryId=2363&p=1](NASA's Blue Marble project). 
 
 
 # GeoIP
