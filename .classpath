@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.6"/>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/controlP5/library/controlP5.jar" sourcepath="/Users/michi/Documents/Processing/libraries/controlP5/src">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/controlP5/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/toxiclibs_p5/library/toxiclibs_p5.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/toxiclibs_p5/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/toxiclibscore/library/toxiclibscore.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/toxiclibscore/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/volumeutils/library/volumeutils.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/volumeutils/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/colorutils/library/colorutils.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/colorutils/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/verletphysics/library/verletphysics.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/verletphysics/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/simutils/library/simutils.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/simutils/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/geomerative/library/geomerative.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Users/michi/Documents/Processing/libraries/geomerative/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Users/michi/Documents/Processing/libraries/GLGraphics/library/GLGraphics.jar" sourcepath="/Users/michi/Documents/Processing/libraries/GLGraphics/src"/>
+	<classpathentry kind="lib" path="/Applications/Editoren/Processing_151.app/Contents/Resources/Java/modes/java/libraries/opengl/library/gluegen-rt.jar"/>
+	<classpathentry kind="lib" path="/Applications/Editoren/Processing_151.app/Contents/Resources/Java/modes/java/libraries/opengl/library/jogl.jar">
+		<attributes>
+			<attribute name="org.eclipse.jdt.launching.CLASSPATH_ATTR_LIBRARY_PATH_ENTRY" value="/Applications/Editoren/Processing_151.app/Contents/Resources/Java/modes/java/libraries/opengl/library"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="/Applications/Editoren/Processing_151.app/Contents/Resources/Java/modes/java/libraries/opengl/library/opengl.jar"/>
+	<classpathentry kind="lib" path="/Applications/Editoren/Processing_151.app/Contents/Resources/Java/core.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
