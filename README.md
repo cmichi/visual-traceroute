@@ -32,6 +32,7 @@ You can either import everything as an Eclipse project, adjust the Build path an
 
 	tar -xf standalone.tar.gz 
 	cd standalone/
+	ln -s ../geoip geoip
 	java -Djava.library.path=./library -jar trace.jar
 
 
