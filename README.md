@@ -1,16 +1,15 @@
 # Readme
 
-This is a graphical frontend for the Unix `traceroute` utility.
+This is a graphical frontend for the Unix `traceroute` utility. It displays the geographic locations to which a URL is resolved. 
 
-Written using the Processing API. Also used: GLGarphics, toxiclibs and controlP5.
-
-It should work under all Unix systems.
+It has been written using the Processing API. These librariers were also used: GLGraphics, toxiclibs and controlP5.
 
 Requirements are:
 
  * `traceroute`
  * `dig`
  * Java
+ * A Unix system
 
 
 # Eye Candy
