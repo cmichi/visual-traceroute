@@ -9,7 +9,8 @@ Requirements are:
  * `traceroute`
  * `dig`
  * Java
- * A Unix system
+
+**Project Status:** I have written this application five years ago and haven't done much work on it since. The application should still work under a Unix system (at the time I tested it under Linux and Mac OS X) with a decent Java version. 
 
 
 # Eye Candy
@@ -19,7 +20,7 @@ Requirements are:
 I also uploaded a short video to [Vimeo](http://vimeo.com/26674070).
 
 
-# Project Status?
+# Known Issues
 
 Some bugs left and I want to resolve the `dig` dependency.
 Known issue: Loading bar vanishes after first station.
