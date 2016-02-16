@@ -17,7 +17,7 @@ Requirements are:
 
 ![Current status](https://github.com/cmichi/visual-traceroute/raw/master/images/shot.png)
 
-Uploaded a short video to [http://vimeo.com/26674070](Vimeo).
+Uploaded a short video to [Vimeo](http://vimeo.com/26674070).
 
 
 # Project Status?
