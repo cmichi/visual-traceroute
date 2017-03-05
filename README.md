@@ -53,6 +53,11 @@ The GeoIP lookup is done using a GeoIP database:
 You can download the current GeoIP database [http://geolite.maxmind.com/download/geoip/database/](here).
 
 
+# Contributors
+
+ * Sébastien Saunier provided a fix for a missing file issue
+
+
 # License
 
 	Copyright (c) 
