@@ -2,7 +2,7 @@
 
 This is a graphical frontend for the Unix `traceroute` utility. It displays the geographic locations to which a URL is resolved. 
 
-It has been written using the Processing API. These librariers were also used: GLGraphics, toxiclibs and controlP5.
+It has been written using the Processing API. These libraries were also used: GLGraphics, toxiclibs and controlP5.
 
 Requirements are:
 
